@@ -1,7 +1,6 @@
 var Sequelize = require('sequelize');
-var db = new Sequelize('postgres://localhost/tripplanner', {
-  logging: true
-});
+var db = require('./index');
+
 
 var Place = db.define('place',{
 	address:{
@@ -27,11 +26,11 @@ var Place = db.define('place',{
 		type: Sequelize.ARRAY(Sequelize.FLOAT),
 		allowNull: false
 	}
-}
+});
 
 
 
 
 
 
-module.exports = db;
+module.exports = Place;

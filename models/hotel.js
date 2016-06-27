@@ -1,15 +1,13 @@
 var Sequelize = require('sequelize');
 var Place = require('./place');
-var db = new Sequelize('postgres://localhost/tripplanner', {
-  logging: true
-});
+var db = require('./index')
 
 var Hotel = db.define('hotel',{
 	name:{
 		type:Sequelize.STRING,
 		allowNull: false
 	},
-	num_star:{
+	num_stars:{
 		type:Sequelize.INTEGER,
 		allowNull: false
 	},
@@ -19,4 +17,6 @@ var Hotel = db.define('hotel',{
 	}
 })
 
-Hotel.belongsTo(Place,{as : 'place'});
+Hotel.belongsTo(Place);
+
+module.exports = Hotel;
