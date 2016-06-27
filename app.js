@@ -2,16 +2,10 @@ var Express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app = new Express();
+var routes = require('./routes');
 
 
-
-
-app.use('/', function(req, res , next){
-	res.send('bye')
-	next();
-})
-
-
+app.use('/', routes);
 
 app.use(function(req, res, next){
 	var err = new Error('Not Found');
