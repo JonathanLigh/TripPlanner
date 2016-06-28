@@ -26,5 +26,13 @@ router.get('/', function(req, res, next){
 	.catch(next);
 })
 
+router.get('/about', function(req, res, next){
+
+})
+
+router.get('/contact', function(req, res, next){
+	
+})
+
 
 module.exports = router;
