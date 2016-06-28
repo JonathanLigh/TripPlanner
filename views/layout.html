@@ -8,10 +8,12 @@
   	<meta name="authors" content="">
     <title>{% block title %}Trip Planner{% endblock %}</title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
     <script type= "text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-  </head>
+  <script src="stylesheets/gmap.js">
+        </script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTaMfqL4XUhb4nbVP6P9zDJe2rbkCwJ9o"></script>
+    </head>
   <body>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
@@ -42,8 +44,6 @@
     <div class="row">
       <div class="col-lg-8">
        <div id="map-canvas"></div>
-        <script src="stylesheets/gmap.js"> </script>
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTaMfqL4XUhb4nbVP6P9zDJe2rbkCwJ9o"></script>
         <hr/>
         <div id="footer" class="container text-muted">
           Trip Planner by Ray and Jon

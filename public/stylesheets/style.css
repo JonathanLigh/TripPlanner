@@ -4,6 +4,6 @@ body{
 	color:blue;
 }
 
-map-canvas{
+#map-canvas{
 	height: 50vh;
 }
