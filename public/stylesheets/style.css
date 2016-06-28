@@ -3,3 +3,7 @@
 body{
 	color:blue;
 }
+
+map-canvas{
+	height: 50vh;
+}

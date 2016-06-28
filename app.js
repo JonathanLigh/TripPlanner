@@ -7,7 +7,6 @@ var swig = require('swig');
 var path = require('path');
 
 
-
 app.use(morgan('dev'));
 app.use(Express.static(path.join(__dirname, './public')));
 
