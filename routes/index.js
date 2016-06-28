@@ -21,7 +21,7 @@ router.get('/', function(req, res, next){
 		return Activity.findAll({});
 	})
 	.then(function(dbActivity){
-		res.send(everything)
+		res.render('index', everything)
 	})
 	.catch(next);
 })
